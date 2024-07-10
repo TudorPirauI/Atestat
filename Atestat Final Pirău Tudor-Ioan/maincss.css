@@ -1,0 +1,79 @@
+
+.container {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: Black;
+  outline: none;
+  text-align: center;
+}
+
+h1:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+
+
+button{
+
+font-family: Bebas Neue;
+font-weight: 100;
+font-size: 21px;
+color: #000000;
+background: linear-gradient(90deg, #0066CC 0%, #48cae4 96%);
+padding: 10px 30px;
+border: 2px solid #0066cc;
+box-shadow: rgb(0, 0, 0) 0px 0px 30px 5px;
+border-radius: 50px;
+transition : 1743ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+}
+
+button:hover{
+
+transition : 1743ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background: linear-gradient(90deg, #0066CC 0%, #48cae4 96%);
+color: #0066cc;
+border: solid 2px #0066cc;
+}
+
+
+.back-video{
+position: absolute;
+right: 0;
+bottom: 0;
+z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+	.back-video{
+	width: 100%;
+	height: auto;
+	}
+}
+
+@media (max-aspect-ratio: 16/9){
+	.back-video{
+	width: auto;
+	height: 100%;
+	}
+}
